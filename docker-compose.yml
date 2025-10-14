@@ -20,6 +20,8 @@ services:
     command: ["npm", "start"]
     volumes:
       - ./frontend:/workspace/frontend
+      # keep the image-built node_modules from being hidden by the host bind mount
+      - /workspace/frontend/node_modules
     ports:
       - "3001:3000"
     depends_on:
