@@ -1,9 +1,9 @@
 {
   "name": "Frontend Container",
 
-  // 使用するdocker-compose.ymlのパス
+  // 使用するcompose.ymlのパス
   "dockerComposeFile": [
-    "../../docker-compose.yml"
+    "../../compose.yml"
   ],
 
   // 今度は'frontend'サービスに接続するよう指定
@@ -17,8 +17,7 @@
       // フロントエンド開発に特化した拡張機能を追加
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "Codeium.codeium"
+        "esbenp.prettier-vscode"
       ]
     }
   },

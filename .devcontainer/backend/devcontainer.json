@@ -1,12 +1,12 @@
 {
   "name": "Backend Container",
 
-  // 使用するdocker-compose.ymlのパスを、このファイルからの相対パスで指定
+  // 使用するcompose.ymlのパスを、このファイルからの相対パスで指定
   "dockerComposeFile": [
-    "../../docker-compose.yml"
+    "../../compose.yml"
   ],
 
-  // docker-compose.ymlに定義したサービスの中から、接続したいサービス名を指定（最重要）
+  // compose.ymlに定義したサービスの中から、接続したいサービス名を指定（最重要）
   "service": "backend",
 
   // コンテナに接続したときに開く作業フォルダ
